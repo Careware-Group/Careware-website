@@ -1,0 +1,212 @@
+{
+  "fav": "./assets/favicon.png",
+  "title": "CAREWARE GROUP LTD",
+  "theme": {
+    "colors": {
+      "bgPrimary": "#000000",
+      "bgSecondary": "#101010",
+      "textLogo":"#fff",
+      "textNav":"#fff",
+      "textPrimary": "#ffffff",
+      "textSecondary": "#ABABAB",
+      "border": "rgba(255, 255, 255, 0.25)",
+      "inputBg": "rgba(112, 114, 116, 0.25)",
+      "placeholder": "#ffffff",
+
+      "mobileNav":"rgba(255, 255, 255, 0.76)",
+      "mobileNavBorder":"rgba(255, 255, 255, 0.12)",
+
+      "accentPrimary": "#4FD1C5",
+      "accentSecondary": "#0ed8f6",
+      "accentGradient": "-webkit-linear-gradient(left, #33E1ED, #33E1ED)",
+      "buttonBg": "linear-gradient(90deg, #0e80f6 0%, #0ed8f6 50%, #0e80f6)",
+      "buttonText": "#ffffff",
+      "buttonHoverBorder": "#132c4c",
+      "link": "#0e80f6",
+      "linkHover": "#0ed8f6",
+
+      "errorBg": "#fff",
+      "errorText": "#383838",
+      "errorBorder": "#ffb900",
+
+      "overlay": "#000000",
+      "overlayOpacity": 0.6,
+      "overlayBlocks": 0.7
+    },
+    "fonts": {
+      "main": "Poppins, sans-serif",
+      "heading": "Roboto, sans-serif",
+      "headingWeight": 200
+    }
+  },
+  "pages": [
+    {
+      "type": "main",
+      "name": "Home",
+      "title": "Beyond Capital. Building Sustainable Value.",
+      "text":
+      "Careware Group partners with ventures across life sciences, technology, logistics, and impact industries. We invest in people, dialogue, and resilient organizations — not just ideas.",
+      "buttons": [
+        {
+          "name":"Explore Our Focus",
+          "link": "Focus"
+        }, 
+        {
+          "name":"Get in Touch",
+          "link": "Contacts"
+      }],
+      "background": "url(./assets/images/pawel-czerwinski-ipzI4hX225M-unsplash.jpg)"
+    },
+    {
+      "type": "blocks",
+      "subtype": 1,
+      "name": "Values",
+      "background": "url(./assets/images/mert-yuce-t9SspB_63eQ-unsplash.jpg)",
+      "text": [
+        {
+          "title":"Intro",
+          "text" : "We believe that great ventures are built on trust, openness, and resilience. At Carevare, we align capital with responsibility and vision with adaptability"
+        },
+        {
+          "title":"Mission",
+          "text" : "We invest in companies ready to transform ideas into lasting businesses, combining innovation with organizational strength and transparent governance."
+        },
+        {
+          "title":"Vision",
+          "text" : "We envision a future where investors and entrepreneurs work as true partners, building ventures that are innovative, accountable, and sustainable across industries and generations."
+        }
+      ],
+      "blocks": [
+        {
+          "title": "Partnership",
+          "text": ["Collaboration and dialogue at every step."],
+          "imageURL": "./assets/images/partnership.png"
+        },
+        {
+          "title": "Openness",
+          "text": ["Listening, questioning, and refining ideas together."],
+          "imageURL": "./assets/images/openness.png"
+        },
+        {
+          "title": "Accountability",
+          "text": ["Clear roles and transparent governance."],
+          "imageURL": "./assets/images/accountability.png"
+        },
+        {
+          "title": "Innovation",
+          "text": ["Bold solutions with real, lasting impact."],
+          "imageURL": "./assets/images/innovation.png"
+        },
+        {
+          "title": "Resilience",
+          "text": ["Growing stronger through challenges."],
+          "imageURL": "./assets/images/resilience.png"
+        },
+        {
+          "title": "Integrity",
+          "text": ["Acting with fairness and clarity."],
+          "imageURL": "./assets/images/integrity.png"
+        }
+      ]
+    },
+    {
+      "type": "blocks",
+      "subtype": 2,
+      "name": "Focus",
+      "background": "url(./assets/images/messrro-BZzOeH1fDsg-unsplash.jpg)",
+      "text": [{
+        "title":"Focus",
+        "text" : "We focus on ventures that combine innovation, structure, and long-term impact. Our portfolio spans industries where technology, science, and responsibility intersect — creating value that lasts beyond market cycles."
+      }],
+      "blocks": [
+        {
+          "title": "Sectors",
+          "text": [
+            "Technology. Solutions that transform industries: applied AI, data-driven platforms, and enterprise SaaS."
+          ],
+          "imageURL": "./assets/images/harmony.png"
+        },
+        {
+          "title": "Life Sciences & Healthcare",
+          "text": ["Innovative programs in biotech, medtech, and digital health with translational potential and clear development pathways."],
+          "imageURL": "./assets/images/Life Sciences & Healthcare.png"
+        },
+        {
+          "title": "Technology",
+          "text": ["Solutions that transform industries: applied AI, data-driven platforms, and enterprise SaaS."],
+          "imageURL": "./assets/images/technology.png"
+        },
+        {
+          "title": "Logistics & Infrastructure",
+          "text": ["Smart supply chains and resilient distribution for regulated and high-value industries."],
+          "imageURL": "./assets/images/logistics.png"
+        },
+        {
+          "title": "Impact-Driven Businesses",
+          "text": ["Sustainability, education, and social enterprises with scalable models for long-term impact."],
+          "imageURL": "./assets/images/impact.png"
+        },
+        {
+          "title": "What we look for",
+          "text": [
+            "Dialogue with investors and stakeholders."],
+          "imageURL": "./assets/images/family.png"
+        }
+      ]
+    },
+    {
+      "type": "text-image",
+      "name": "Offer",
+      "background": "#0a0a0a",
+      "subtitle": "Smart Growth. Human Touch",
+      "title":"What We Offer",
+      "text": [
+        "We provide strategic and operational guidance to help companies grow with clarity and purpose.",
+        "From business development to organizational improvement, we focus on creating systems that enhance customer care, strengthen internal structures, and align teams around sustainable goals.",
+        "Our role is to bridge international standards with your company’s unique values — helping you evolve without losing what makes you distinct."
+      ],
+      "imageURL": "./assets/images/david-kristianto-1pgY0jGsMnk-unsplash.jpg"
+    },
+    {
+      "type": "text",
+      "name": "Approach",
+      "background": "url(./assets/images/wu-yi-7M1h78xvD8Q-unsplash.jpg)",
+      "subtitle": "Building Businesses That Last",
+      "title": "Approach",
+      "text": [
+        "We see investment as a partnership. Our approach combines capital with strategic guidance, organizational support, and long-term commitment.",
+        "Steps (4-stage model):",
+        "1. Dialogue & Diagnostic – Understanding vision, gaps, and opportunities.",
+        "2. Structuring & Readiness – Strengthening organization, roles, and strategy.",
+        "3. Growth & Oversight – Supporting execution, tracking progress, and adapting plans.",
+        "4. Sustainable Partnership – Preparing for future rounds, exits, or expansion with resilience."
+      ],
+      "quote": "Not just capital — a commitment <br> to building businesses that last.",
+      "quoteAuthor": ""
+    },
+    {
+      "type": "contact",
+      "name": "Contacts",
+      "textSmall": "Want to work with us?",
+      "textBig": "Contact Us",
+      "imageURL": "./assets/images/christian-werther-h6MXPgjjCqg-unsplash.jpg",
+      "buttonIcon": "./assets/images/check-circle.svg",
+      "footer": {
+        "address": "3 Edgecot Grove, London, England, N15 5HD",
+        "links" : [
+          {
+            "name": "Linkedin",
+            "link": "linkedin.com",
+            "icon": "./assets/images/linkedin.png"
+          },
+          {
+            "name": "Facebook",
+            "link": "facebook.com",
+            "icon": "./assets/images/facebook.png"
+          }
+      ]
+      },
+      "email": "yourmail@gmail.com"
+    }
+  ]
+}
