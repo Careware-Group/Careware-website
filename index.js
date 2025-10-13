@@ -79,8 +79,6 @@ function renderSite(config) {
         });
     }
 
-
-
     // Set header title
     document.getElementById('header-content').querySelector('h2').textContent = config.title;
 
@@ -252,15 +250,12 @@ function smoothScroll(event, target) {
     const section = document.querySelector(`#${target}`);
     section.scrollIntoView();
 
-    // Remove active from all links + sections
     document.querySelectorAll('.fixed-header nav a').forEach(link => link.classList.remove('active'));
     document.querySelectorAll('#content > div').forEach(sec => sec.classList.remove('active'));
 
-    // Add active to clicked link + target section
     event.target.classList.add('active');
     section.classList.add('active');
 
-    // Start programmatic scroll
     isProgrammaticScrolling = true;
     setTimeout(() => { isProgrammaticScrolling = false; }, 1200);
 }
@@ -273,7 +268,7 @@ function setupSectionScrolling() {
         if (isProgrammaticScrolling) return;
         isProgrammaticScrolling = true;
 
-        if (index < 0) index = sections.length - 1;
+        if (index < 0) index = 0;
         if (index >= sections.length) index = 0;    
 
         currentIndex = index;
@@ -285,6 +280,7 @@ function setupSectionScrolling() {
 
         navLinks[index].classList.add('active');
         sections[index].classList.add('active');
+
 
         setTimeout(() => { isProgrammaticScrolling = false }, 1200);
     }
@@ -298,10 +294,23 @@ function setupSectionScrolling() {
             goToSection(currentIndex - 1);
         }
     });
-    // }, { passive: false });
 
-    // Sync on load
+    window.addEventListener('resize', () => {
+        const activeSection = document.querySelector('#content > div.active');
+        if (!activeSection) return;
+
+        if (isProgrammaticScrolling) return;
+        isProgrammaticScrolling = true;
+
+        activeSection.scrollIntoView({ behavior: 'auto' });
+
+        setTimeout(() => {
+            isProgrammaticScrolling = false;
+        }, 300);
+    });
+
     goToSection(0);
+
 }
 
 function setupContactForm(config) {
