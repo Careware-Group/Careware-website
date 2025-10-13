@@ -5,9 +5,9 @@
     "colors": {
       "bgPrimary": "#000000",
       "bgSecondary": "#101010",
-      "textLogo":"#fff",
+      "textLogo":"#33E1ED",
       "textNav":"#fff",
-      "textPrimary": "#ffffff",
+      "textPrimary": "#33E1ED",
       "textSecondary": "#ABABAB",
       "border": "rgba(255, 255, 255, 0.25)",
       "inputBg": "rgba(112, 114, 116, 0.25)",
@@ -36,8 +36,25 @@
     "fonts": {
       "main": "Poppins, sans-serif",
       "heading": "Roboto, sans-serif",
-      "headingWeight": 200
+      "headingWeight": 200,
+      "files": [
+        {
+          "name": "Poppins",
+          "path": "./assets/fonts/Poppins-Regular.woff2",
+          "format": "woff2",
+          "weight": "400",
+          "style": "normal"
+        },
+        {
+          "name": "Roboto",
+          "path": "./assets/fonts/Roboto-Light.woff2",
+          "format": "woff2",
+          "weight": "300",
+          "style": "normal"
+        }
+      ]
     }
+
   },
   "pages": [
     {
@@ -50,7 +67,7 @@
         {
           "name":"Explore Our Focus",
           "link": "Focus"
-        }, 
+        },
         {
           "name":"Get in Touch",
           "link": "Contacts"
@@ -120,13 +137,6 @@
       }],
       "blocks": [
         {
-          "title": "Sectors",
-          "text": [
-            "Technology. Solutions that transform industries: applied AI, data-driven platforms, and enterprise SaaS."
-          ],
-          "imageURL": "./assets/images/harmony.png"
-        },
-        {
           "title": "Life Sciences & Healthcare",
           "text": ["Innovative programs in biotech, medtech, and digital health with translational potential and clear development pathways."],
           "imageURL": "./assets/images/Life Sciences & Healthcare.png"
@@ -147,10 +157,14 @@
           "imageURL": "./assets/images/impact.png"
         },
         {
-          "title": "What we look for",
+          "title": "What we are looking for",
           "text": [
-            "Dialogue with investors and stakeholders."],
-          "imageURL": "./assets/images/family.png"
+            "Dialogue with investors and stakeholders.",
+            "Adaptability and willingness to refine strategies",
+            "Organizational clarity and accountability",
+            "Innovation with purpose",
+            "Resilience in navigating uncertainty"],
+          "imageURL": "./assets/images/whatwelookfor.png"
         }
       ]
     },
@@ -181,8 +195,7 @@
         "3. Growth & Oversight – Supporting execution, tracking progress, and adapting plans.",
         "4. Sustainable Partnership – Preparing for future rounds, exits, or expansion with resilience."
       ],
-      "quote": "Not just capital — a commitment <br> to building businesses that last.",
-      "quoteAuthor": ""
+      "quotes": ["Not just capital — a commitment <br> to building businesses that last."]
     },
     {
       "type": "contact",
