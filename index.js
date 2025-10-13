@@ -60,6 +60,25 @@ function renderSite(config) {
     document.documentElement.style.setProperty('--main-font', config.theme.fonts.main);
     document.documentElement.style.setProperty('--heading-font', config.theme.fonts.heading);
     document.documentElement.style.setProperty('--heading-font-weight', config.theme.fonts.headingWeight);
+    
+    // Load custom fonts if available
+    if (config.theme.fonts.files && Array.isArray(config.theme.fonts.files)) {
+        config.theme.fonts.files.forEach(font => {
+            const fontFace = new FontFace(
+                font.name,
+                `url(${font.path}) format('${font.format || 'woff2'}')`,
+                {
+                    weight: font.weight || 'normal',
+                    style: font.style || 'normal',
+                }
+            );
+            fontFace.load().then(loadedFace => {
+                document.fonts.add(loadedFace);
+                console.log(`Loaded custom font: ${font.name}`);
+            }).catch(err => console.error('Error loading font:', err));
+        });
+    }
+
 
 
     // Set header title
@@ -154,14 +173,18 @@ function renderSite(config) {
             section.className = 'text-section';
             section.innerHTML = `
                 <div class="elementor-background-overlay"></div>
-                 ${page.quote ? `
+                <div class="quote-container">
+                ${page.quotes ? `
                     <div class="quote">
-                        <blockquote>
-                            <p>${page.quote}</p>
-                        </blockquote>
-                        ${page.quoteAuthor ? `<p>—${page.quoteAuthor}</p>` : ''}
+                        ${Array.isArray(page.quotes) ? 
+                            page.quotes.map(quote => 
+                                `<blockquote><p>${quote}</p></blockquote>`
+                            ).join('') : `
+                            <blockquote><p>${page.quotes}</p></blockquote>`
+                        }
                     </div>
-                `: ''}
+                ` : ''}
+                </div>
                 <div class="text-container">
                     <div class="title-area">
                         <span>${page.subtitle}</span>
