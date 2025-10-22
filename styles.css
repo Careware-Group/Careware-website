@@ -491,7 +491,6 @@ blockquote p::after {
     text-align: left;
     justify-content: center;
     opacity: 0;
-    /* animation: fadeOut 1s ease forwards;  */
 }
 .text-section.active .title-area, .text-section.active .quote {
     animation: fadeInUp 1s ease forwards;
@@ -819,7 +818,6 @@ button {
 
     html, body {
         overflow: auto;
-        overscroll-behavior-y: auto;
     }
     .fixed-header h2 {
         font-size: 1.2rem;
@@ -834,8 +832,6 @@ button {
         flex-direction: column;
     }
 
-
-    /* nav toggle button */
     .nav-toggle {
         position: relative;
         padding: 0;
@@ -848,7 +844,7 @@ button {
         cursor: pointer;
         background: none;
         border: none;
-        z-index: 2000; /* on top of nav */
+        z-index: 2000; 
     }
 
     .nav-toggle span {
@@ -860,7 +856,6 @@ button {
         transition: all 0.3s ease;
     }
 
-    /* When active → cross */
     .nav-toggle.active span:nth-child(1),
     .nav-toggle.active span:nth-child(3) {
         opacity: 0;
@@ -870,17 +865,22 @@ button {
     .nav-toggle.active span:nth-child(2) {
         transform: rotate(45deg);
         position: absolute;
-        /* top: 10px; */
     }
 
     .nav-toggle.active span:nth-child(3) {
         transform: rotate(-45deg);
         position: absolute;
-        /* top: 10px; */
         opacity: 1;
     }
 
-    /* mobile nav menu */
+    button.nav-toggle:hover {
+        border: none;
+    }
+    button.nav-toggle:focus {
+        border: none;
+    }
+
+
     .mobile-nav {
         position: fixed;
         top: 0;
@@ -945,6 +945,9 @@ button {
     .main-section p {
         font-size: 1.2rem;
     }
+    .blocks-section.subtype-1 .intro,  .blocks-section.subtype-2 .intro{
+        margin-top: 0;
+    }
     .text-image-section .text-image-container,
     .text-section .text-container {
         flex-direction: column;
@@ -969,6 +972,16 @@ button {
     .text-section .text-container {
         width: 90vw;
         align-items: flex-start;
+    }
+
+    .text-section {
+        flex-direction: column;
+
+    }
+    .quote-container {
+        position: relative;
+        top: 0;
+        margin: 0 0 2rem 0;
     }
 
     .quote {

@@ -296,6 +296,7 @@ function setupSectionScrolling() {
     });
 
     window.addEventListener('resize', () => {
+        if (window.innerWidth <= 800) return;
         const activeSection = document.querySelector('#content > div.active');
         if (!activeSection) return;
 
